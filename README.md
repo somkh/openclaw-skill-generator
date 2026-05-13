@@ -48,7 +48,7 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>.git
 - 新建一个skill，用来……
 - I want to build a skill that…
 
-之后按向导提问逐步补齐信息即可。向导的核心节奏写在 [SKILL.md](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/SKILL.md) 中。
+之后按向导提问逐步补齐信息即可。向导的核心节奏写在 [SKILL.md](./SKILL.md) 中。
 
 ---
 
@@ -66,14 +66,14 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>.git
 
 ## 仓库结构
 
-- [SKILL.md](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/SKILL.md)：skill 的主逻辑与交互协议（向导本体）
-- [scripts/](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/scripts)：
+- [SKILL.md](./SKILL.md)：skill 的主逻辑与交互协议（向导本体）
+- [scripts/](./scripts)：
   - `find_openclaw_path.js`：定位/创建 `.openclaw/skills` 并输出 `skillsPath`
   - `write_file.js`：写文件（限制在 `.openclaw` 边界内）
   - `write_skill.js`：把草稿 skill 部署到目标目录（含 replace / rollback / cleanup）
   - `list_files.js`：递归列目录文件清单（JSON）
   - `backup_skill.js`：备份一个已安装的 skill 目录
-- [references/](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/references)：仅供人工阅读的设计/排错参考资料（不参与自动执行）
+- [references/](./references)：设计与排错资料目录；其中 `tool-setup-guide.md` 会在执行阶段用于处理工具/环境/依赖故障，其余文档默认供人工参考
 
 ---
 
@@ -88,7 +88,7 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>.git
 
 ## License
 
-MIT License. See [LICENSE](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/LICENSE).
+MIT License. See [LICENSE](./LICENSE).
 
 ---
 
@@ -116,4 +116,4 @@ Then follow the wizard prompts.
 
 ### License
 
-MIT License. See [LICENSE](file:///e:/%28%E4%B8%93%E8%BE%91%29Harness_Engingeering%E5%88%B0%E5%BA%95%E6%98%AF%E4%B8%AA%E5%95%A5%21/skill_self_make/claude-openclaw-skill-generator/openclaw-skill-generator/LICENSE).
+MIT License. See [LICENSE](./LICENSE).
